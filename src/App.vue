@@ -117,7 +117,7 @@ export default {
 </script>
 
 <style>
-/* Base Styles */
+
 :root {
   --primary-color: #42b983;
   --secondary-color: #35495e;
@@ -164,17 +164,19 @@ body {
   width: 100%;
 }
 
-/* Enhanced Sidebar Styles */
+
 .sidebar {
-  width: var(--sidebar-width);
-  background-color: var(--secondary-color);
+  width: 280px; 
+  height: 100vh;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  background-color: #35495e; 
   color: white;
-  display: flex;
-  flex-direction: column;
-  transition: width var(--transition-speed);
-  overflow: hidden;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   z-index: 1000;
+  overflow-y: auto;
 }
 
 .sidebar.visible {
@@ -309,9 +311,10 @@ nav {
 .main-content {
   flex-grow: 1;
   background-color: var(--light-color);
-  transition: margin-left var(--transition-speed);
+  transition: margin-left var;
   display: flex;
   flex-direction: column;
+  margin-left: 0 !important; 
 }
 
 .content-header {
@@ -413,6 +416,7 @@ nav {
   .search-bar {
     display: none;
   }
+  
 }
 </style>
 

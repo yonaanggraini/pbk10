@@ -1,14 +1,4 @@
-<template>
-  <div class="home" style="text-align: center;">
-    <h1>Welcome to Our Website</h1>
-    <p class="subtitle">This is the main page of our application</p>
 
-    <div class="card">
-      <h2>Featured Content</h2>
-      <p>Discover amazing features we offer to our users.</p>
-    </div>
-  </div>
-</template>
 
 <script>
 export default {
