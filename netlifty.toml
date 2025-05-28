@@ -1,0 +1,3 @@
+[build]
+  base    = "percobaan"  # Ganti dengan nama folder build Anda
+  command = "npm run build"
